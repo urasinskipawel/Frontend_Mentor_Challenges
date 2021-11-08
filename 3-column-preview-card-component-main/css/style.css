@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 15px;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: hsl(0, 0%, 95%);
+	font-family: "Lexend Deca", sans-serif;
+}
+h2 {
+	font-family: "Big Shoulders Display", cursive;
+	text-transform: uppercase;
+	font-size: 32px;
+	margin: 13% auto;
+	color: hsl(0, 0%, 95%);
+}
+button {
+	padding: 7%;
+	width: 10rem;
+	border-radius: 50px;
+	border-color: transparent;
+	margin-top: 2rem;
+	background-color: hsl(0, 0%, 95%);
+	cursor: pointer;
+}
+p {
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card {
+	width: 90%;
+	margin: 20% auto;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.sedans,
+.suvs,
+.luxury {
+	padding: 12% 15%;
+}
+.sedans {
+	background-color: hsl(31, 77%, 52%);
+}
+.suvs {
+	background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+	background-color: hsl(179, 100%, 13%);
+}
+
+.sedans button {
+	color: hsl(31, 77%, 52%);
+}
+.suvs button {
+	color: hsl(184, 100%, 22%);
+}
+.luxury button {
+	color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 700px) {
+	body {
+		height: 100vh;
+	}
+	.card {
+		display: flex;
+		width: 65%;
+	}
+
+	.sedans,
+	.suvs,
+	.luxury {
+		padding: 5%;
+	}
+}
