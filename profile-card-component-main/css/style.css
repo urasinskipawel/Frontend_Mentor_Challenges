@@ -27,6 +27,7 @@ body {
 .card {
 	height: 55%;
 	width: 90%;
+	max-width: 360px;
 	background-color: #fff;
 	border-radius: 15px;
 	border-color: transparent;
@@ -36,6 +37,7 @@ body {
 .background {
 	position: relative;
 	height: 33%;
+	width: 105%;
 	background: url(../images/bg-pattern-card.svg);
 	background-size: cover;
 }
@@ -87,8 +89,5 @@ h1 {
 @media screen and (min-width: 600px) {
 	body {
 		background-position: -300px -600px, 650px 275px;
-	}
-	.card {
-		max-width: 25%;
 	}
 }
