@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: "Red Hat Display", sans-serif;
+	background-image: url("/images/pattern-background-mobile.svg");
+	background-repeat: no-repeat;
+	background-color: hsl(225, 100%, 94%);
+}
+
+.box {
+	height: 80%;
+	width: 80%;
+	max-width: 330px;
+	background-color: #fff;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0px 10px 10px 2px rgba(138, 138, 138, 0.2);
+}
+
+.hero {
+	background-image: url("/images/illustration-hero.svg");
+	background-size: cover;
+	width: 100%;
+	height: 30%;
+	background-position: center;
+}
+.content {
+	text-align: center;
+	padding: 25px 29px 0px 29px;
+}
+.content h2 {
+	font-weight: 900;
+	color: hsl(223, 47%, 23%);
+	margin-bottom: 15px;
+}
+.content p {
+	color: #8a8a8abd;
+	margin-bottom: 20px;
+	line-height: 22px;
+}
+.plan-box {
+	width: 85%;
+	display: flex;
+	padding: 15px;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	background-color: hsl(225, 100%, 98%);
+	border-radius: 12px;
+}
+.plan-box-text {
+	margin-left: -10px;
+	color: #8a8a8abd;
+	font-weight: 700;
+	font-size: 14px;
+}
+.plan-box-text h5 {
+	font-weight: 900;
+	color: hsl(223, 47%, 23%);
+	margin-bottom: 3px;
+	font-size: 14px;
+}
+.plan-box-img {
+	display: flex;
+	align-items: center;
+}
+.plan-box a {
+	font-weight: 900;
+	font-size: 13px;
+	cursor: pointer;
+}
+button {
+	display: block;
+	width: 85%;
+	margin: 20px auto 10px;
+	padding: 14px;
+	border-radius: 15px;
+	border-color: transparent;
+	background-color: blue;
+	color: white;
+	font-weight: 900;
+	letter-spacing: 1px;
+	box-shadow: 0px 17px 10px 2px rgba(138, 138, 138, 0.2);
+	cursor: pointer;
+}
+
+.cancel {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	color: hsl(224, 23%, 55%);
+	text-decoration: none;
+	font-weight: 700;
+}
+
+@media screen and (min-width: 1000px) {
+	body {
+		background-image: url("/images/pattern-background-desktop.svg");
+		background-size: contain;
+		background-position: 0 -25px;
+	}
+	.plan-box-text {
+		margin-left: -35px;
+	}
+	.cancel {
+		margin-top: -5px;
+	}
+}
